@@ -1,62 +1,43 @@
-baseURL = 'nhorus.github.io'
+baseURL = 'https://nhorus.github.io/'
 title = 'Фотоаппараты'
-theme = 'w3-simple'
+theme = 'newsroom'
 
-languageCode = "en-us"
-defaultContentLanguage = "en"
+languageCode = "ru-ru"
+defaultContentLanguage = "ru"
 
 canonifyurls = true
-paginate = 12
-hasCJKLanguage = false
+paginate = 9
 
 author = "Воропаев Алексей"
 
-[languages.en]
-weight = 0
-languageName = "English"
-contentDir = "content/english"
-[languages.en.params]
-      title = "Фотоаппараты"
-      logotext = "ФОТОАППАРАТЫ" # logo text
-      isso_baseurl=""  #if you want to use isso as comment system,set your isso js baseurl here. It is like "https://isso.yourwebsite.com/" or "https://yourwebsite.com/isso/"
-      isso_langcode="en"
-      cookie_info = ""
-   
-[[languages.en.menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
-[[languages.en.menu.main]]
-    name = "Категории"
-    url = "/categories/"
-    weight = 3
-[[languages.en.menu.main]]
-    name = "Тэги"
-    url = "/tags/"
-    weight = 4
+[markup]
+  [markup.goldmark.renderer]
+    hardWraps = false
+    unsafe = false # change to true to enable inclusion of rawHTML and math functions
+    xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+    tabWidth = 2
 
-[[languages.en.menu.main]]
-    name = "Все фотоаппараты"
-    url = "/allposts/"
-    weight = 5
+# If you want to use disqus, uncomment the line below
+# disqusShortname = "yourdiscussshortname"
 
-
-
+# ids used below are not valid. Replace with valid ones
 [params]
-#  faviconsDir = "images/icons/" # with a trailing slash
-    welcomemessage = false #if set true. The home page will display the content of _index.md 
-    authorandlicense = false 
-    authorimgurl = "" #if authorandlicense set true, this one must be set too
-    relatedPosts = true
-    backtotop = false
-    lazyload = true  #if set true, lazy load images on websites asynchronously — that is, after the above-the-fold content is fully loaded, or even conditionally, only when they appear in the browser's viewport. 
-    glowlogo = false # if want logo to have glowing style, set true.
-    scrollindicator = false # if need scroll indicator on the top, set true
-    allliststyle = false  # list post with sortable all list style. If false then gridstyle or simple style
-    gridstyle = true  # list post with grid style. If false then simple list
-    readingtime = false  #display reading time
-    firstpic = true  # display first picture as thumbnail if no thumbnail set. For gridstyle only
-    socialshare = false
-    socialicon = false
-    googletranslate = false
-
+  # locale = "en_US"
+  # ga_analytics = "" # google analytics ID e.g UA-116386578-1
+  # ga_verify = "" # google verification code e.g 5jb-rxeBfITeJQKOuUss3ud6FPGTxXkCho-ZN5qlrZg
+  # twitter = "" # twitter handle e.g @weru
+  # mainSections = ["blog", "docs"] see https://gohugo.io/functions/where/#mainsections
+  # uncomment the line below will disable darkmode by default.
+  # uncomment and set value below to either "light" or "dark" to make default mode dark.
+  # defaultMode = "" # Note that the UI control for toggling darkmode will remain in place. This way, the user can decide which mode they would like to use while browsing your website
+  logo = "" # if the value is an empty string, the site title will be shown instead
+  faviconsDir = "images/icons/" # with a trailing slash
+  blogDir = "post" # edit
