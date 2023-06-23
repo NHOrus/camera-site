@@ -1,13 +1,62 @@
 baseURL = 'nhorus.github.io'
-languageCode = 'en-us'
 title = 'Фотоаппараты'
-theme = 'newsroom'
+theme = 'w3-simple'
+
+languageCode = "en-us"
+defaultContentLanguage = "en"
 
 canonifyurls = true
-paginate = 9
+paginate = 12
+hasCJKLanguage = false
 
 author = "Воропаев Алексей"
+
+[languages.en]
+weight = 0
+languageName = "English"
+contentDir = "content/english"
+[languages.en.params]
+      title = "Фотоаппараты"
+      logotext = "ФОТОАППАРАТЫ" # logo text
+      isso_baseurl=""  #if you want to use isso as comment system,set your isso js baseurl here. It is like "https://isso.yourwebsite.com/" or "https://yourwebsite.com/isso/"
+      isso_langcode="en"
+      cookie_info = ""
+   
+[[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[languages.en.menu.main]]
+    name = "Категории"
+    url = "/categories/"
+    weight = 3
+[[languages.en.menu.main]]
+    name = "Тэги"
+    url = "/tags/"
+    weight = 4
+
+[[languages.en.menu.main]]
+    name = "Все фотоаппараты"
+    url = "/allposts/"
+    weight = 5
+
+
+
 [params]
-  logo = "" # if the value is an empty string, the site title will be shown instead
 #  faviconsDir = "images/icons/" # with a trailing slash
-  blogDir = "post" # edit
+    welcomemessage = false #if set true. The home page will display the content of _index.md 
+    authorandlicense = false 
+    authorimgurl = "" #if authorandlicense set true, this one must be set too
+    relatedPosts = true
+    backtotop = false
+    lazyload = true  #if set true, lazy load images on websites asynchronously — that is, after the above-the-fold content is fully loaded, or even conditionally, only when they appear in the browser's viewport. 
+    glowlogo = false # if want logo to have glowing style, set true.
+    scrollindicator = false # if need scroll indicator on the top, set true
+    allliststyle = false  # list post with sortable all list style. If false then gridstyle or simple style
+    gridstyle = true  # list post with grid style. If false then simple list
+    readingtime = false  #display reading time
+    firstpic = true  # display first picture as thumbnail if no thumbnail set. For gridstyle only
+    socialshare = false
+    socialicon = false
+    googletranslate = false
+
