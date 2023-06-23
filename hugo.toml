@@ -1,1 +1,13 @@
-theme = 'basic'
+baseURL = 'nhorus.github.io'
+languageCode = 'en-us'
+title = 'Фотоаппараты'
+theme = 'newsroom'
+
+canonifyurls = true
+paginate = 9
+
+author = "Воропаев Алексей"
+[params]
+  logo = "" # if the value is an empty string, the site title will be shown instead
+#  faviconsDir = "images/icons/" # with a trailing slash
+  blogDir = "post" # edit
