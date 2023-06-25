@@ -1,8 +1,8 @@
-- item: About
+- item: О сайте
   url: about/
-- item: Blog
+- item: Фотоаппараты
   url: ""
-- item: Category
+- item: Категории
   url: categories
-- item: Tag
+- item: Тэги
   url: tags
