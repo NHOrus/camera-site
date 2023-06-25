@@ -17,7 +17,9 @@
     {{- end }}
   <article class = 'article mb-2'>
     <a href = '{{ $value.Permalink }}' {{ if eq $index 0 }} class = 'grid-reverse' {{ end }}>
-      <div class = 'article_thumb' style='background-image: url({{ $bg }})'></div>
+      <div class = 'article_thumb' style='background-image: url({{ $bg }})'>
+        <div class="cost">Здесь будет цена</div>
+      </div>
       <div class = 'article_meta {{ if eq $index 0 }} center_y {{ end }}'>
         <time class = 'post_date'>{{ dateFormat "January 02, 2006" $value.Date }}</time>
         <h3 class = 'article_title'>{{ $value.Title }}</h3>

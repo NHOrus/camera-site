@@ -1021,6 +1021,16 @@ aside h3 {
   margin: 0;
 }
 
+.cost {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background-color: white;
+  padding-left: 8px;
+  padding-right: 16px;
+  opacity: 0.5;
+}
+
 .pale {
   opacity: 0.7;
 }
